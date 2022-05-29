@@ -80,3 +80,11 @@ Tasks:
 
 - Each JVM (only 1 JVM per node) is given the resources that is asked by the driver. In this case, 4 CPU cores on each JVM container. So on every JVM on the node, there can be 4 executor slots which correspond to 4 parallel threads (4 Tasks running at the same time on a node).
 - The driver knows how many slots do we have at each executor. And it is going to assign tasks to fit in the executor slots.
+
+**After all the transformation, action will requires each task to send data back to the driver over the network and present back to the user**
+
+## Task failure
+- The driver considers the job done when all the tasks are successful.
+- If any task fails, the driver might want to **retry** it.
+- So it can restart the task at a **different executor**.
+- **If all retries also fail**, then the driver returns an **exception** and marks the job failed.
