@@ -1,6 +1,3 @@
-# spark-optimization
-Spark Optimization techniques
-
 ## Spark Cluster and Runtime Architecture
 
 ![image](https://user-images.githubusercontent.com/59940078/170861592-b321bc32-9d49-46ab-81f1-ff78f30b8372.png)
