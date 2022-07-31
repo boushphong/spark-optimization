@@ -53,6 +53,8 @@ JVM Heap memoery is broken down into 3 parts:
 - **Spark Memory Pool**
 - **User Memory**
 
+![image](https://user-images.githubusercontent.com/59940078/182023951-992960e1-a98e-4aec-a624-7458118dfc51.png)
+
 ![image](https://user-images.githubusercontent.com/59940078/170874859-2ecd49e6-e7b9-4dbf-9334-d297d610a241.png)
 
 ### The Spark memory pool is further broken down 50:50 into two sub-pools 
