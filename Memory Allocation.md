@@ -57,7 +57,7 @@ JVM Heap memoery is broken down into 3 parts:
 
 ### The Spark memory pool is further broken down 50:50 into two sub-pools 
 - **Storage memory** (Caching Dataframe)
-- **Executor memory** (Joining Operation for buffer)
+- **Executor memory** (Joining, sorting, grouping Operation for buffer - usually shuffles)
 
 ![image](https://user-images.githubusercontent.com/59940078/170875083-26bfd332-40b6-49c5-9dac-d2ee92b24cd7.png)
 
