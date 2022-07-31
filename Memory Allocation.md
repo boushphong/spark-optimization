@@ -121,6 +121,8 @@ The unnecessary cached data frames will be evicted (spilled) to the the disk. Ho
 
 ![image](https://user-images.githubusercontent.com/59940078/170877119-2d2990d8-e4d1-47d6-9fd6-6afd922c8feb.png)
 
+![image](https://user-images.githubusercontent.com/59940078/182024087-dd75ae29-c391-4dfa-b3d1-e1a07d595767.png)
+
 Most of the spark operations and data caching are performed in the JVM heap. And they perform best when using the on-heap memory. However, the JVM heap is subject to garbage collection. 
 
 If you are allocating a huge amount of heap memory to your executor, you might see excessive garbage collection delays.
