@@ -4,7 +4,7 @@
 - spark.driver.memory (JVM Memory)
 - spark.driver.memoryOverhead (default value is 0.1, 10% of the spark.driver.memory) 
 
-The minimum memoryOverhead is 384MB, so even when 10% of 1GB of driver memory is 100MB. Spark will still initiate 384 driver's memoryOverhead and 1GB of driver's memory, which in total is 1384 MB (~1.4G).
+The minimum memoryOverhead is 384MB, so even when 10% of 1GB of driver memory is 100MB. Spark will still initiate 384MB of driver's memoryOverhead and 1GB of driver's memory, which in total is 1384 MB (~1.4G).
 
 Your Spark driver uses all the JVM heap but nothing from the overhead.
 
@@ -136,7 +136,7 @@ You can set your off-heap memory requirement using spark.memory.offHeap.size.
 
 Spark will use the off-heap memory to extend the size of spark executor memory and storage memory.
 
-The off-heap memory is the extra space. So if needed, Spark will use it to buffer spark dataframe operations and cache the data frames. So adding off-heam is an indirect method of increasing the executor and storage memory pools.
+The off-heap memory is the extra space. So if needed, Spark will use it to buffer spark dataframe operations and cache the data frames. So adding off-heap is an indirect method of increasing the executor and storage memory pools.
 
 ![image](https://user-images.githubusercontent.com/59940078/170877357-df2a812f-9bb0-406a-a27d-92370ad8314c.png)
 
